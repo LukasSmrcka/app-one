@@ -16,7 +16,7 @@ apply plugin: 'spring-boot'
 
 //noinspection GroovyAssignabilityCheck
 jar {
-	baseName = 'client-app-one'
+	baseName = 'app-one'
 	version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
@@ -31,6 +31,7 @@ dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-config:1.1.2.RELEASE')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-actuator')
+	compile('org.springframework.cloud:spring-cloud-starter-eureka-server:1.1.2.RELEASE')
 }
 
 

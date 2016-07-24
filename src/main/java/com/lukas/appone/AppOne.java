@@ -1,12 +1,14 @@
-package com.lukas.clientappone;
+package com.lukas.appone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-public class ClientAppOneApplication {
+@EnableDiscoveryClient
+public class AppOne {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientAppOneApplication.class, args);
+		SpringApplication.run(AppOne.class, args);
 	}
 }

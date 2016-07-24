@@ -1,4 +1,4 @@
-package com.lukas.clientappone;
+package com.lukas.appone.configdemo;
 
 
 import org.springframework.beans.factory.annotation.Value;

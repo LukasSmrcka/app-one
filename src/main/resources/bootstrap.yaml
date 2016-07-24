@@ -1,6 +1,6 @@
 spring:
   application:
-     name: client-app-one
+     name: app-one
   profiles:
     #active: primary
 
