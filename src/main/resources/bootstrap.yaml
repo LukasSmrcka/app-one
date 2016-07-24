@@ -1,0 +1,20 @@
+spring:
+  application:
+     name: client-app-one
+  profiles:
+    #active: primary
+
+  cloud:
+    config:
+      uri: http://localhost:8002
+      # Application will not start without configuration server
+      failFast: false
+
+
+
+      #Secured with HTTP basic authentication
+      #uri: https://localhost:8002
+      #username: user
+      #password: secret
+
+# The rest of configurations will be loaded from config server

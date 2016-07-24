@@ -1,0 +1,7 @@
+server:
+  port: 8010
+
+custom:
+  localKey: "Some local value"
+  remoteKey: "Config server offline!!! Providing local remoteKey value"
+  color: Blue
