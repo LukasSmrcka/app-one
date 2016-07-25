@@ -1,13 +1,10 @@
 package com.lukas.appone.feigndemo;
 
 
-import com.lukas.appone.servicediscovery.UnderTheHoodServiceDiscovery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.net.URI;
 
 @RestController
 public class AppTwoCommunicatinController {

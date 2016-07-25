@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UnderTheHoodServiceDiscovery {
+public class UnderTheHoodServiceUriProvider {
 
     @Autowired
     DiscoveryClient client;
 
-    public URI discoverClientUri(String serviceName) {
+    public URI discoverServerUri(String serviceName) {
         List<ServiceInstance> services = client.getInstances(serviceName);
         Optional<ServiceInstance> serviceOptional = services.stream().findFirst();
         if(serviceOptional.isPresent()) {
