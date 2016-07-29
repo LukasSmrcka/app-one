@@ -15,7 +15,7 @@ public class RefrshScopeDemoController {
     @Value("${custom.localKey}")
     private String localKey;
 
-    @Value("${custom.remoteKey}")
+    @Value("${custom.color}")
     private String remoteKey;
 
     @RequestMapping(value = "/refresh-scope-demo")
@@ -26,7 +26,7 @@ public class RefrshScopeDemoController {
                     .append(localKey)
                     .append("<br>")
                     .append("<br>")
-                    .append("remoteKey: ")
+                    .append("color: ")
                     .append(remoteKey);
 
         return configValues.toString();
